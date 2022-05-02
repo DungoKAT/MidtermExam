@@ -1,0 +1,409 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascript"></script>
+    <title>Midterm Exam
+    </title>
+  </head>
+
+  <body onscroll="myFunction()" class="lightGrey-to-darkGreyBG">
+    <!-- Header -->
+    <header>
+      <div class="header" >
+        <div id="header-1" class="light-to-darkBG">
+          <div class="light-to-darkBG container-nav c1">
+            <div class="top-nav">
+              <div class="search">
+                <input placeholder=" search">
+                <b class="dark-to-light"><span>ค้นหา</span></b>
+              </div>
+              <div class="pull-down">
+                <button onclick="pull()">Pull Down</button>
+              </div>
+              <div class="nav-text">
+                <a class="dark-to-light nav-but" onclick="light_to_dark()">Dark</a>
+                <a class="dark-to-light nav-but" onclick="dark_to_light()">Light</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="header-2" class="lightGrey-to-darkGreyBG">
+          <div class="lightGrey-to-darkGreyBG container-nav c2">
+            <div class="menu">
+              <a class="darkGrey-to-lightGreyFont" href="#works">ผลงาน</a>
+            </div>
+            <div class="menu">
+              <a class="darkGrey-to-lightGreyFont" href="#news&activities">ข่าวและกิจกรรม</a>
+            </div>
+            <div class="menu">
+              <a class="darkGrey-to-lightGreyFont" href="#course">หลักสูตร</a>
+            </div>
+            <div class="menu">
+              <a class="darkGrey-to-lightGreyFont" href="#about">เกี่ยวกับคณะ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="top-button">
+        <a href="#top"></a>
+      </div>
+    </header>
+
+    <div id="itpage" class="itPage">
+      <div class="lift-up">
+        <button onclick="lift()">Lift Up</button>
+      </div>
+      <img class="itpic" src="https://www.it.kmitl.ac.th/wp-content/themes/itkmitl2017wp/img/nav-thai.svg">
+    </div>
+
+    <!-- Scrolls 
+    <div id="text">
+        <h1 class="scrolls">Scrolls : <span id="scrolls">0</span></h1>
+    </div>
+    -->
+
+    <!-- Main Page -->
+    <div id="top" class="fullscreen flex-center-parent parallax">
+        <div class="card flex-center-parent">
+            <p><b style="font-size: 5rem;">คณะไอที</b><br><b style="font-size: 40px;">พระจอมเกล้าลาดกระบัง</b></p>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <!-- ผลงาน -->
+    <div id="works" class="light-to-darkBG container">
+      <h3 class="dark-to-light">
+        ผลงาน
+      </h3>
+
+      <div id="canvas" class="hover" data-scene="scene-1">
+        <div class="scene-1">
+          <img src="https://www.it.kmitl.ac.th/wp-content/uploads/2021/08/1300x867pix_%E0%B8%AD%E0%B8%B2%E0%B8%88%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B9%8C%E0%B8%AA%E0%B8%B8%E0%B8%82%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%8C%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%95%E0%B8%B3%E0%B9%81%E0%B8%AB%E0%B8%99%E0%B9%88%E0%B8%87%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B9%8C-resize-1-1024x650.jpg" class="fullwidth">
+        </div>
+        <div class="scene-2">
+          <img src="https://www.it.kmitl.ac.th/wp-content/uploads/2021/06/resize_1300x867pix_Award_%E0%B8%97%E0%B8%B8%E0%B8%99%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B5-GKS-1024x650.jpg" class="fullwidth">
+        </div>
+        <div class="scene-3">
+          <img src="https://www.it.kmitl.ac.th/wp-content/uploads/2021/06/1300x867pix_Award_best-paper-award_resize-1024x650.jpg" class="fullwidth">
+        </div>
+        <div class="scene-4">
+          <img src="https://www.it.kmitl.ac.th/wp-content/uploads/2021/03/1300x867pix-NSC-2021-03-resize.jpg" class="fullwidth">
+        </div>
+        <div class="scene-5">
+          <img src="https://www.it.kmitl.ac.th/wp-content/uploads/2020/09/1300x867pix-CPF-Hackathon-2020-resize-1.jpg" class="fullwidth">
+        </div>
+        <div class="scene-6">
+          <img src="https://www.it.kmitl.ac.th/wp-content/uploads/2021/03/1300x867pix-%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%A7%E0%B8%94%E0%B8%AA%E0%B8%AB%E0%B8%81%E0%B8%B4%E0%B8%88%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B8%94%E0%B8%B5%E0%B9%80%E0%B8%94%E0%B9%88%E0%B8%99-resize.jpg" class="fullwidth">
+        </div>
+        <div class="scene-7">
+          <img src="https://www.it.kmitl.ac.th/wp-content/uploads/2020/10/1300x867pix-%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5%E0%B8%94%E0%B8%B5%E0%B9%80%E0%B8%94%E0%B9%88%E0%B8%99-resize.jpg" class="fullwidth">
+        </div>
+        <div class="scene-8">
+          <img src="https://www.it.kmitl.ac.th/wp-content/uploads/2021/03/1300x867pix-Financial-Cyber-Security-Bootcamp-2020-resize.jpg" class="fullwidth">
+        </div>
+      </div>
+      <div class="button-group">
+        <button onclick="canvas.dataset.scene = `scene-1`"></button>
+        <button onclick="canvas.dataset.scene = `scene-2`"></button>
+        <button onclick="canvas.dataset.scene = `scene-3`"></button>
+        <button onclick="canvas.dataset.scene = `scene-4`"></button>
+        <button onclick="canvas.dataset.scene = `scene-5`"></button>
+        <button onclick="canvas.dataset.scene = `scene-6`"></button>
+        <button onclick="canvas.dataset.scene = `scene-7`"></button>
+        <button onclick="canvas.dataset.scene = `scene-8`"></button>
+      </div>
+      <div class="button-area">
+        <button class="button-click seework">ดูผลงานทั้งหมด</button>
+      </div>
+
+      <h4 id="news&activities" class="dark-to-light">
+        ข่าวและกิจกรรม
+      </h4>
+      
+      <!-- News & Activities -->
+
+        <!-- News 1 -->
+        <div id="news1" class="grid-parent">
+          <div class="news1 card-article span-4 mob-span-12">
+            <img src="https://www.it.kmitl.ac.th/wp-content/uploads/2021/09/resize_1300x867pix_%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B9%82%E0%B8%97-%E0%B9%80%E0%B8%AD%E0%B8%81-2-64-%E0%B8%A3%E0%B8%AD%E0%B8%9A-2.jpg" class="fullwidth">
+            <div class="padding">
+              <p class="top-text">ข่าวรับสมัครนักศึกษา, ข่าวและกิจกรรม, รับสมัครนักศึกษาระดับ ป.โท - เอก</p>
+              <p class="topic-news">คณะไอทีลาดกระบัง เปิดรับนักศึกษาใหม่ ป.โท – เอก 2/2564 รอบที่ 2</p>
+            </div>
+          </div>
+          <div class="news1 card-article span-4 ">
+            <img src="https://www.it.kmitl.ac.th/wp-content/uploads/2021/08/1300x867pix_%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%B4%E0%B8%97%E0%B8%98%E0%B8%B4%E0%B9%8C%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B1%E0%B8%9A%E0%B8%9A%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B8%B4%E0%B8%95-2-2564-%E0%B8%A3%E0%B8%AD%E0%B8%9A%E0%B8%97%E0%B8%B5%E0%B9%88-1-resize.jpg" class="fullwidth">
+            <div class="padding">
+              <p class="top-text">ข่าวรับสมัครนักศึกษา, ข่าวและกิจกรรม, รับสมัครนักศึกษาระดับ ป.โท - เอก</p>
+              <p class="topic-news">ประกาศรายชื่อผู้มีสิทธิ์เข้าศึกษาต่อระดับบัณฑิตศึกษา ภาคเรียนที่ 2/2564 (รอบที่ 1)</p>
+            </div>
+          </div>
+          <div class="news1 card-article span-4 mob-span-6">
+            <img src="https://www.it.kmitl.ac.th/wp-content/uploads/2021/08/1300x867pix_%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%B4%E0%B8%97%E0%B8%98%E0%B8%B4%E0%B9%8C%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%93%E0%B9%8C%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B1%E0%B8%9A%E0%B8%9A%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B8%B4%E0%B8%95-2-2564-%E0%B8%A3%E0%B8%AD%E0%B8%9A%E0%B8%97%E0%B8%B5%E0%B9%88-1-resize.jpg" class="fullwidth">
+            <div class="padding">
+              <p class="top-text">ข่าวรับสมัครนักศึกษา, ข่าวและกิจกรรม, รับสมัครนักศึกษาระดับ ป.โท - เอก</p>
+              <p class="topic-news">ประกาศรายชื่อผู้มีสิทธิ์สอบสัมภาษณ์เข้าศึกษาต่อระดับบัณฑิตศึกษา ภาคเรียนที่ 2/2564 (รอบที่ 1)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- News 2 -->
+        <div id="news2" class="grid-parent">
+          <div class="news2 card-article span-4">
+            <img src="https://www.it.kmitl.ac.th/wp-content/uploads/2021/07/1300x867pix_%E0%B8%9B%E0%B8%90%E0%B8%A1%E0%B8%99%E0%B8%B4%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B9%82%E0%B8%97-1-2564-resize.jpg" class="fullwidth">
+            <div class="padding">
+              <p class="top-text">Uncategorized</p>
+              <p class="topic-news">📢 ขอเชิญนักศึกษาใหม่ระดับปริญญาโท ร่วมงาน “ปฐมนิเทศ 64”</p>
+            </div>
+          </div>
+          <div class="news2 card-article span-4">
+            <img src="https://www.it.kmitl.ac.th/wp-content/uploads/2021/07/1300x867pix_%E0%B8%9B%E0%B8%90%E0%B8%A1%E0%B8%99%E0%B8%B4%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%B5-2564-resize.jpg" class="fullwidth">
+            <div class="padding">
+              <p class="top-text">Uncategorized</p>
+              <p class="topic-news">ขอเชิญนักศึกษาใหม่ปริญญาตรี ร่วมงาน “ปฐมนิเทศ 64”</p>
+            </div>
+          </div>
+          <div class="news2 card-article span-4">
+            <img src="https://www.it.kmitl.ac.th/wp-content/uploads/2021/07/resize_1300x867pix_%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B9%82%E0%B8%97-%E0%B9%80%E0%B8%AD%E0%B8%81-2-64.jpg" class="fullwidth">
+            <div class="padding">
+              <p class="top-text">Uncategorized</p>
+              <p class="topic-news">คณะไอทีลาดกระบัง เปิดรับนักศึกษาใหม่ ป.โท – เอก 2/2564</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- News 3 -->
+        <div id="news3" class="grid-parent">
+          <div class="news3 card-article span-4">
+            <img src="https://www.it.kmitl.ac.th/wp-content/uploads/2021/05/1300x867pix_ICITEE2021-resize.jpg" class="fullwidth">
+            <div class="padding">
+              <p class="top-text">ข่าวกิจกรรมคณะ, ข่าวอื่นๆ, ข่าวและกิจกรรม</p>
+              <p class="topic-news">UPCOMING ICITEE 2021</p>
+            </div>
+          </div>
+          <div class="news3 card-article span-4">
+            <img src="https://www.it.kmitl.ac.th/wp-content/uploads/2021/09/resize_1300x867pix_%E0%B8%97%E0%B8%B8%E0%B8%99%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%A3%E0%B8%B4%E0%B8%A1%E0%B8%A7%E0%B8%B4%E0%B8%8A%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3.jpg" class="fullwidth">
+            <div class="padding">
+              <p class="top-text">Research Highlight, ข่าวอื่นๆ</p>
+              <p class="topic-news">ทุนส่งเสริมส่วนงานวิชาการ (เงินรายได้) ประจำปีงบประมาณ พ.ศ. 2565</p>
+            </div>
+          </div>
+          <div class="news3 card-article span-4">
+            <img src="https://www.it.kmitl.ac.th/wp-content/uploads/2021/08/1300x867pix_%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%9B%E0%B8%99%E0%B8%B2%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%9A%E0%B8%B1%E0%B8%99-2564-%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%A3%E0%B8%AD%E0%B8%9A-61-%E0%B8%9B%E0%B8%B5-resize.jpg" class="fullwidth">
+            <div class="padding">
+              <p class="top-text">ข่าวอื่นๆ ข่าวและกิจกรรม</p>
+              <p class="topic-news">ขอเชิญร่วมงานวันคล้ายวันสถาปนาสถาบัน ครบรอบ 61 ปี สจล. รูปแบบออนไลน์</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- News 4 -->
+        <div id="news4" class="grid-parent">
+          <div class="news4 card-article span-4">
+            <img src="https://www.it.kmitl.ac.th/wp-content/uploads/2021/06/resize_1300x867pix_%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%B4%E0%B8%97%E0%B8%98%E0%B8%B4%E0%B9%8C%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%93%E0%B9%8C%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%97%E0%B8%B8%E0%B8%99%E0%B8%9A%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B8%B4%E0%B8%95.jpg" class="fullwidth">
+            <div class="padding">
+              <p class="top-text">ข่าวรับสมัครนักศึกษา, ข่าวและกิจกรรม, รับสมัครนักศึกษาระดับ ป.โท - เอก</p>
+              <p class="topic-news">คณะไอทีลาดกระบัง ประกาศรายชื่อผู้มีสิทธิ์สอบสัมภาษณ์เข้าศึกษาต่อและรับทุน ระดับบัณฑิต 1/2654</p>
+            </div>
+          </div>
+          <div class="news4 card-article span-4">
+            <img src="https://www.it.kmitl.ac.th/wp-content/uploads/2021/06/resize_1300x867pix_credit-bank-2564.jpg" class="fullwidth">
+            <div class="padding">
+              <p class="top-text">ข่าวการอบรม, ข่าวและกิจกรรม</p>
+              <p class="topic-news">คณะไอทีลาดกระบัง เปิดรับนักศึกษาใหม่ ป.โท – เอก 2/2564 รอบที่ 2</p>
+            </div>
+          </div>
+          <div class="news4 card-article span-4">
+            <img src="https://www.it.kmitl.ac.th/wp-content/uploads/2021/06/resize_1300x867pix_TCAS64_round-3_%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%97%E0%B8%B8%E0%B8%99%E0%B9%81%E0%B8%A3%E0%B8%81%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%B5-%E0%B8%A3%E0%B8%AD%E0%B8%9A-2-3.jpg" class="fullwidth">
+            <div class="padding">
+              <p class="top-text">ข่าวอื่นๆ ข่าวและกิจกรรม</p>
+              <p class="topic-news">คณะไอทีลาดกระบังจับมือ AiAT จัดโครงการอบรมสะสมหน่วยกิต ทางด้าน AI & Deep Learning รุ่นที่ 2</p>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+
+    <!-- Course Fade -->
+    <br>
+    <div class=" flex-center-parent2 parallax2">
+      <div id="fade1" class=" card flex-center-parent2">
+          <p class="fade1"><b style="font-size: 3rem;">หลักสูตรทั้งหมด</b><br><br><b style="font-size: 20px;">ผลิตบัณฑิตที่พร้อมด้วยคุณสมบัติอันพึงประสงค์ <br>ในสาขาวิชาที่สอดคล้องกับความต้องการของสังคม <br>ทั้งปริญญาตรี ปริญญาโท และปริญญาเอก</b>
+            <br><br><br><br><button class="fade1 button-click seefade"><span>รายละเอียด</span></button>
+          </p>
+      </div>
+    </div>
+    <br><br>
+    <div class=" flex-center-parent2 parallax3">
+      <div id="fade2" class=" card flex-center-parent2">
+          <p class="fade2"><b style="font-size: 3rem;">วิจัยและนวัตกรรม</b><br><br><b style="font-size: 20px;">คณะสนับสนุนการวิจัยด้วยห้องปฏิบัติการ 3 กลุ่ม <br>ทั้งกลุ่มวิทยาการสารสนเทศ กลุ่มระบบเครือข่าย และกลุ่มสื่อประสม</b>
+            <br><br><br><br><button class="fade2 button-click seefade"><span>รายละเอียด</span></button>
+          </p>
+      </div>
+    </div>
+    <br><br>
+    <div class=" flex-center-parent2 parallax4">
+      <div id="fade3" class=" card flex-center-parent2">
+          <p class="fade3"><b style="font-size: 3rem;">Life@IT</b><br><br><b style="font-size: 20px;">บรรยากาศสถานที่ การเรียน และชีวิตประจำวันในคณะ</b>
+            <br><br><br><br><button class="fade3 button-click seefade"><span>รายละเอียด</span></button>
+          </p>
+      </div>
+    </div>
+    <br><br>
+
+    <!-- Course -->
+    <div id="course" class="fullscreen flex-center-parent parallax5">
+      <div class="card flex-center-parent">
+          <p><b style="font-size: 5rem;">หลักสูตร</b></p>
+      </div>
+    </div>
+
+    <div class="light-to-darkBG container">
+      <!-- Course 1 -->
+      <div id="course1" class="grid-parent">
+        <div class="course1 card-article span-4 mob-span-12">
+          <img src="https://www.it.kmitl.ac.th/wp-content/themes/itkmitl2017wp/img/course-bach-it.jpg" class="fullwidth">
+          <div class="padding">
+            <p class="top-text2">สาขาวิชาเทคโนโลยีสารสนเทศ</p><br style="line-height:0.9">
+            <p class="content-course"><span>หลักสูตรปริญญาตรี</span><br><span>4 ปี</span></p>
+            <button class="button-click2 details"><span>รายละเอียด</span></button>
+          </div>
+        </div>
+        <div class="course1 card-article span-4 ">
+          <img src="https://www.it.kmitl.ac.th/wp-content/themes/itkmitl2017wp/img/course-bach-dsba.jpg" class="fullwidth">
+          <div class="padding">
+            <p class="top-text2">สาขาวิชาวิทยาการข้อมูลและการวิเคราะห์เชิงธุรกิจ</p>
+            <p class="content-course"><span>หลักสูตรปริญญาตรี</span><br><span>4 ปี</span></p>
+            <button class="button-click2 details"><span>รายละเอียด</span></button>
+          </div>
+        </div>
+        <div class="course1 card-article span-4 mob-span-6">
+          <img src="https://www.it.kmitl.ac.th/wp-content/themes/itkmitl2017wp/img/course-bach-bit.jpg" class="fullwidth">
+          <div class="padding">
+            <p class="top-text2">สาขาเทคโนโลยีสารสนเทศทางธุรกิจ (หลักสูตรนานาชาติ)</p>
+            <p class="content-course"><span>หลักสูตรปริญญาตรี</span><br><span>4 ปี</span></p>
+            <button class="button-click2 details"><span>รายละเอียด</span></button>
+          </div>
+        </div>
+
+        <div class="course1 card-article span-4 mob-span-12">
+          <img src="https://www.it.kmitl.ac.th/wp-content/themes/itkmitl2017wp/img/course-honors.jpg" class="fullwidth">
+          <div class="padding">
+            <p class="top-text2">โครงการแววนวัตกร</p>
+            <p class="content-course"><span>หลักสูตรปริญญาตรี ควบ ปริญญาโท</span><br><span>5 ปี</span></p>
+            <button class="button-click2 details"><span>รายละเอียด</span></button>
+          </div>
+        </div>
+        <div class="course1 card-article span-4 ">
+          <img src="https://www.it.kmitl.ac.th/wp-content/themes/itkmitl2017wp/img/course-phd.jpg" class="fullwidth">
+          <div class="padding">
+            <p class="top-text2">สาขาวิชาเทคโนโลยีสารสนเทศ</p>
+            <p class="content-course"><span>หลักสูตรปริญญาโท</span><br><span>2 ปี</span></p>
+            <button class="button-click2 details"><span>รายละเอียด</span></button>
+          </div>
+        </div>
+        <div class="course1 card-article span-4 mob-span-6">
+          <img src="https://www.it.kmitl.ac.th/wp-content/themes/itkmitl2017wp/img/course-master.jpg" class="fullwidth">
+          <div class="padding">
+            <p class="top-text2">สาขาวิชาเทคโนโลยีสารสนเทศ</p>
+            <p class="content-course"><span>หลักสูตรปริญญาเอก</span><br><span>3 ปี</span></p>
+            <button class="button-click2 details"><span>รายละเอียด</span></button>
+          </div>
+        </div>
+
+        <div class="course1 card-article span-4 mob-span-12">
+          <img src="https://www.it.kmitl.ac.th/wp-content/themes/itkmitl2017wp/img/course-master-ai.jpg" class="fullwidth">
+          <div class="padding">
+            <p class="top-text2">สาขาปัญญาประดิษฐ์ และการเรียนรู้เชิงลึก</p>
+            <p class="content-course"><span>หลักสูตรวิชาโท</span><br><span>1 ปี</span></p>
+            <button class="button-click2 details"><span>รายละเอียด</span></button>
+          </div>
+        </div>
+        <div class="course1 card-article span-4 ">
+          <img src="https://www.it.kmitl.ac.th/wp-content/themes/itkmitl2017wp/img/course-master-ai-biz.jpg" class="fullwidth">
+          <div class="padding">
+            <p class="top-text2">สาขาวิชาปัญญาประดิษฐ์เพื่อการวิเคราะห์เชิงธุรกิจ</p>
+            <p class="content-course"><span>หลักสูตรปริญญาโท</span><br><span>2 ปี</span></p>
+            <button class="button-click2 details"><span>รายละเอียด</span></button>
+          </div>
+        </div>
+        <div class="course1 card-article span-4 mob-span-6">
+          <img src="https://www.it.kmitl.ac.th/wp-content/themes/itkmitl2017wp/img/course-phd-ai-biz-intl.jpg" class="fullwidth">
+          <div class="padding">
+            <p class="top-text2">สาขาวิชาปัญญาประดิษฐ์เพื่อการวิเคราะห์เชิงธุรกิจ (นานาชาติ)</p>
+            <p class="content-course"><span> หลักสูตรปริญญาเอก</span><br><span>3-4 ปี</span></p>
+            <button class="button-click2 details"><span>รายละเอียด</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div id="about" class="fullscreen flex-center-parent parallax6">
+      <div class="card flex-center-parent">
+          <p><b style="font-size: 5rem;">เป็นองค์กรที่ใช้นวัตกรรม<br>เพื่อความเป็นเลิศทางการศึกษา<br>ด้านเทคโนโลยีสารสนเทศ</b></p>
+      </div>
+    </div>
+
+    <div class="light-to-darkBG container-about">
+      <div id="about" class="grid-parent2">
+        <div class="about card-article2">
+          <img src="https://www.it.kmitl.ac.th/wp-content/themes/itkmitl2017wp/img/about-foundation.png" class="fullwidth">
+          <div class="padding">
+            <p class="top-text3">ก่อตั้ง</p>
+            <p class="about-content">27 กุมภาพันธ์ 2539</p>
+          </div>
+        </div>
+        <div class="about card-article2">
+          <img src="https://www.it.kmitl.ac.th/wp-content/themes/itkmitl2017wp/img/about-location.png" class="fullwidth">
+          <div class="padding">
+            <p class="top-text3">สถานที่ตั้ง</p>
+            <p class="about-content">ลาดกระบัง กทม.</p>
+          </div>
+        </div>
+        <div class="about card-article2">
+          <img src="https://www.it.kmitl.ac.th/wp-content/themes/itkmitl2017wp/img/about-executives.png" class="fullwidth">
+          <div class="padding">
+            <p class="top-text3">ผู้บริหาร</p>
+            <p class="about-content">ผู้บริหารคณะ</p>
+          </div>
+        </div>
+        <div class="about card-article2">
+          <img src="https://www.it.kmitl.ac.th/wp-content/themes/itkmitl2017wp/img/about-personnel.png" class="fullwidth">
+          <div class="padding">
+            <p class="top-text3">บุคลากร</p>
+            <p class="about-content">คณาจารย์และเจ้าหน้าที่</p>
+          </div>
+        </div>
+        <div class="about card-article2">
+          <img src="https://www.it.kmitl.ac.th/wp-content/themes/itkmitl2017wp/img/about-contact.png" class="fullwidth">
+          <div class="padding">
+            <p class="top-text3">ติดต่อ</p>
+            <p class="about-content">การติดต่อคณะ</p>
+          </div>
+        </div>
+        <div class="about card-article2">
+          <img src="https://www.it.kmitl.ac.th/wp-content/themes/itkmitl2017wp/img/about-life.png" class="fullwidth">
+          <div class="padding">
+            <p class="top-text3">Life@IT</p>
+            <p class="about-content">บรรยากาศในคณะ</p>
+          </div>
+        </div>
+        <div class="about card-article2">
+          <img src="https://www.it.kmitl.ac.th/wp-content/themes/itkmitl2017wp/img/about-donate.png" class="fullwidth">
+          <div class="padding">
+            <p class="top-text3">บริจาค</p>
+            <p class="about-content">เพื่อการศึกษา</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<script>
+
+</script>
+  </body>
+</html>
